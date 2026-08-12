@@ -88,6 +88,11 @@ contracts change.
 
 When contributing, apply the constitution to itself.
 
+Have an idea but not a finished change? Open a
+[suggestion](https://github.com/Paylo-One/engineering-constitution/issues/new?template=suggestion.yml)
+with the problem, evidence, trade-offs, and alternatives so it can be
+evaluated on its merits.
+
 ## License
 
 Licensed under the [Apache License 2.0](LICENSE).

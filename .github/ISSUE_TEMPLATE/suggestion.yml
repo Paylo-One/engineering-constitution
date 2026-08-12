@@ -1,0 +1,91 @@
+name: Suggest an improvement
+description: Propose a change to the constitution, its skills, or its templates
+title: "[Suggestion]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the Engineering Constitution.
+
+        Suggestions are evaluated against the constitution's principles, simplicity, and impact on adopters. Opening an issue starts that evaluation; it does not guarantee adoption.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the recurring engineering failure, ambiguity, or gap independently of your proposed solution.
+      placeholder: Engineers or agents currently...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Explain what you would add, remove, or change and where it belongs.
+      placeholder: Change Principle X, the Y skill, or the Z template by...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area affected
+      description: Select the part of the constitution most directly affected.
+      options:
+        - Principles
+        - Work classification or orchestration
+        - Requirements engineering
+        - Architecture or system design
+        - Distributed systems or reliability
+        - Software design
+        - Software lifecycle
+        - Engineering review
+        - Templates
+        - Documentation or adoption
+        - Multiple areas
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and examples
+      description: Share concrete cases where the current constitution produced, allowed, or failed to prevent the problem.
+      placeholder: In this project or situation...
+    validations:
+      required: true
+
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Trade-offs and risks
+      description: What becomes harder, more complex, or less flexible if this suggestion is adopted?
+      placeholder: This would improve... at the cost of...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What simpler or different approaches did you consider, and why were they insufficient?
+      placeholder: I also considered...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add links, references, or implementation notes that would help evaluate the suggestion.
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I searched existing issues and did not find the same suggestion.
+          required: true
+        - label: I understand that suggestions are evaluated and may not be adopted.
+          required: true
